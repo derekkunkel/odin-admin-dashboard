@@ -188,23 +188,22 @@ header div {
     display: grid;
     grid-row: 1/5;
     grid-template-rows: 1fr 8fr 4fr 11fr;
-
-    /* max-height: 90%; */
 }
 
 .logo {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     align-items: center;
-    justify-items: center;
-
     font-size: 24px;
 }
+
 
 .dashboard-logo {
     filter: invert(100%) sepia(2%) saturate(9%) hue-rotate(4deg) brightness(104%) contrast(103%);
     height: 40px;
     width: 40px;
+
+    padding-left: 16px;
 }
 
 
@@ -261,34 +260,33 @@ header div {
     display: grid;
 
     grid-column: 1/2;
-    grid-row: 1/4;
+    grid-template-rows: 1fr 12fr;
 
-    padding-bottom: 12px;
+    /* padding-bottom: 12px; */
     padding-top: 0px;
 }
 
 .project-container-title {
     display: grid;
 
-    /* height: 20px; */
     font-size: 16px;
     font-weight: bold;
 
-    padding: 16px;
+    padding-top: 24px;
+    padding-left: 16px;
 }
 
 .project-card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     padding-left: 16px;
     gap: 2rem;
 }
 
 .project-card {
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
-
+    grid-template-rows: 0.2fr 1fr;
     font-size: 12px;
     border-radius: 8px;
     background-color: white;
@@ -297,11 +295,11 @@ header div {
 
 .project-title {
     padding-left: 12px;
-    padding-top: 24px;
-    padding-bottom: 0px;
-
+    padding-top: 12px;
     font-size: 12px;
     font-weight: 800;
+
+    max-height: 12px;
 }
 
 .project-description {
@@ -320,6 +318,7 @@ header div {
 
     gap: 24px;
     padding: 16px;
+    padding-top: 0px;
 }
 
 .project-card-icons img{
@@ -337,17 +336,17 @@ header div {
 
     padding: 16px;
     padding-top: 0px;
-    gap: 20px;
+    gap: 16px;
 }
 
 .announcements {
-    padding-top: 18px;
+    padding-top: 24px;
 }
 
 .announcements-container-title {
     display: grid;
     
-    height: 32px;
+    height: 26px;
 
     font-size: 16px;
     font-weight: bold;
@@ -394,30 +393,61 @@ header div {
 
 
 .trending {
-    padding-top: 32px;
+    font-size: 14px;
+    font-family: Helvetica;
 }
 
 .trending-title {
     display: grid;
-    height: 32px;
+    height: 24px;
     font-size: 16px;
     font-weight: bold;
 }
 
 .trending-container {
     display: grid;
-    
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    
-    padding: 18px;
-    gap: 32px;
 
     background-color: white;
     box-shadow: 3px 3px 5px -1px #868686b0;
     border-radius: 8px;
 }
 
-.trending-card {
+.trending-user-list {
     display: grid;
+
+    grid-template-rows: repeat(4,1fr);
+    gap: 16px;
+}
+
+.trending-user-list li {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+
+.trending-user-list li div {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+
+    gap: 4px;
+}
+
+.trending-user-icon {
+    height: 48px;
+    width: 48px;
+
+    border-radius: 50%;
+}
+
+.trending-user-name {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.trending-user-description {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(139, 139, 139);
 }
 
